@@ -36,9 +36,7 @@ box-shadow: 25px 25px 5px rgba(0,0,0,.2)inset;
 background-color:#C1D6CF;
 
 padding: 10px;
-
 margin: 30px;
-
 
 }
 
@@ -59,10 +57,6 @@ width: 300px;
 
 /* Hobbies Section*/
 
-#hobbies ul :nth-last-child(even) {
-    color: #8E4129;
-
-}
 
 /* Gallery Section*/
 
@@ -100,22 +94,19 @@ margin:0 auto;
 
 /*Dropcaps*/
 
-#lit div p:nth-child(3n+1)::first-letter {
 
-    color:red;
-    background-image: radial-gradient(#ffff);
-    float:left;
-    font-size: 3em;
-    padding:25em;
-    margin-right:25em;
-    line-height:.65;
-    border: 4px outset #ffff;
-    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
-    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-    border-top-left-radius: .2em;
-    border-bottom-right-radius:.2em;
+.fix-text{
+    text-align: left;
+}
+
+.indent{
+    font-size: 40px;
 }
     
+.hobbies-text-one{
+    font-size: 20px;
+    color: blue;
+}
 
 
 
