@@ -164,9 +164,10 @@
 
             <h2>Contact Us</h2>
 
-            <form id="contactForm" name="contactForm">
-
-                <fieldset>
+            <form id="contactForm" name="contactForm" method="post"
+            data-netlify="true">
+        
+                  <fieldset>
                     
                     <legend>Contact Form</legend>
                     <div id="formElements">
@@ -203,14 +204,10 @@
                     <fieldset>
                         <legend>Would you like a reply?</legend>
                         <ul>
-                            <li>
-                                <label type="radio" id="message-yes" name="reply">Yes a reply would be nice. </label> </li>
-                           <li> 
-                            <input type="radio" id="message-no" name="reply" checked>                                                      
-                            <label for="message-no"> No, thanks.<label>              
-                        
-                         
-                        </li>    
+                            
+                            <li><input type="radio" id="message-yes" name="reply">Yes a reply would be nice. </li>
+                             <li><input type="radio" id="message-no" name="reply" checked>                                                      
+                         <label for="message-no"> No, thanks.</label>   </li>    
                                                 
                         </ul>
 
@@ -218,7 +215,7 @@
                     
                     <!--Submit-->
                                         
-                    <buttom type="submit"> Send</buttom> 
+                    <button type="submit"> Send </button> 
 
 
 

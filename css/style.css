@@ -196,6 +196,7 @@ footer {
 
 #formElements {
   display: grid;
+  text-align: left;
 
 }
 
