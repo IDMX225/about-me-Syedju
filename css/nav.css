@@ -78,7 +78,9 @@ font-size: 1.2em;
     background-color:whitesmoke;
     border-radius: 10px;
     outline:none;
-}}
+}
+
+
 
 
 /* 
@@ -86,3 +88,22 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+
+@media screen and (min-width: 60rem) {
+    .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+         }
+.navbar ul {
+
+display: flex;
+justify-content: space-between;
+
+}
+
+        }
