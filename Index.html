@@ -12,32 +12,17 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sacramento&display=swap"
         rel="stylesheet">
 
-    <link href="CSS/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-<!--The body element contains all content shown to a visior-->
+
 
     <header>
-        <!--The header shows logo and page title-->
 
-        <nav class="navbar">
-            <div class="logo">
-               <img src="img/logo-96X96.svg" alt="Bob logo">  
-               
-            </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#Bio">Biography</a></li>
-                    <li><a href="#gallery">Photo Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>   
-        </nav>
-        
+        <img src="img/logo-96X96.svg" alt="Bob logo">
 
         <h1>Web Dev 1</h1>
 
@@ -56,7 +41,7 @@
 
         </section>
 
-        <section id="Bio">
+        <section id="bio">
             <h2>Biography:</h2>
 
             <div>
@@ -68,7 +53,6 @@
 
                 <p><a href="https://www.raritanval.edu/career-training">RVCC career-training</a></p>
 
-               
 
             </div>
 
@@ -89,33 +73,23 @@
             </div>
 
 
-        </section Id="gallery">
+        </section>
 
-        <h2> Photo Gallery</h2>
-
-        <hr>
-        <figure>
-            <img src="img/Boating-640w.jpg" alt="Boating" width="640">
-             <!-- PIXABAY.COM -->
-            <figcaption>Boating.</figcaption>
-
-        </figure>
-
-        <hr>
-        <figure>
-            <img src="img/Fishing-640w.jpg" alt="Fishing" width="640">
-            <figcaption>Fishing.</figcaption>
-            <!-- PIXABAY.COM -->
-        </figure>
-        <hr>
-        <figure>
-            <img src="img/Traveling-640w.jpg" alt="Traveling" width="640">
-            <!-- PIXABAY.COM -->
-            <figcaption>Traveling.</figcaption>
-
-        </figure>
-
-
+        <section id="gallery">
+            <div class="responsive-gallery-row">
+                <figure>
+                    <img src="img/Boating-640w.jpg" alt="Boating">
+                    <figcaption>Boating.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Fishing-640w.jpg" alt="Fishing">
+                    <figcaption>Fishing.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Traveling-640w.jpg" alt="Traveling">
+                    <figcaption>Traveling.</figcaption>
+                </figure>
+            </div>
         </section>
         
 
@@ -126,7 +100,8 @@
 
 
             <div>
-            <p class="fix-text"><span class="indent">L</span>ove is a theme that is explored in literature across different time periods and genres, with
+                <p class="fix-text"><span class="indent">L</span>ove is a theme that is explored in literature across
+                    different time periods and genres, with
                     varying interpretations of its nature and effects.
                     William Shakespeare in his sonnet 116 “Let me not to the Marriage of True Minds” describes love as
                     eternal and unchanging, enduring even in the face of time and hardship. In contrast, William
@@ -174,78 +149,6 @@
 
             </div>
         </article>
-
-        <section id="contact">
-
-
-            <h2>Contact Us</h2>
-
-            
-            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
-           
-        
-                  <fieldset>
-                    
-                    <legend>Contact Form</legend>
-                    <div id="formElements">
-
-                    <!-- Name -->
-                    <label for="name">Name (required)</label>
-                     <input type="text" id="name" name="name" required> 
-
-                     <!--Email-->
-                     <label for="email">Email (required)</label>
-                     <input type="email" id="email" name="email" required>
-                     
-
-                     <!--Phone-->
-                     <label for="phone">Phone (required)</label>
-                     <input type="tel" id="phone" name="phone" required>
-                     
-                    <!--Phone type-->                        
-                     <label for="phonetype">Phone type (optional)</label>
-                     <select id="phonetype" name="phonetype">
-
-                        <option value=""selected>Select phone type </option>
-                        <option value="Mobile"> Mobile </option>
-                        <option value="Work"> Work </option>
-                        <option value="Home"> Home </option>
-                        <select> 
-                           
-                     <!--Message-->    
-
-                    <label for="message">Message (optional)</label>
-                    <textarea id="message" name="message" rows="8"></textarea> </textarea>
-                           
-                    <!--Reply-->
-                    <fieldset>
-                        <legend>Would you like a reply?</legend>
-                        <ul>
-                            
-                            <li><input type="radio" id="message-yes" name="reply">Yes a reply would be nice. </li>
-                             <li><input type="radio" id="message-no" name="reply" checked>                                                      
-                         <label for="message-no"> No, thanks.</label>   </li>    
-                                                
-                        </ul>
-
-                    </fieldset>
-                    
-                    <!--Submit-->
-                                        
-                    <button type="submit"> Send </button> 
-
-
-
-                    </div>
-
-                </fieldset>
-
-            </form>
-
-
-             </section>
-
-
 
     </main>
 
